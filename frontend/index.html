@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AQI Route Planner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>AQI-Aware Running Route Planner</h1>
+
+  <form id="routeForm">
+    <label>
+      Location:
+      <input type="text" id="location" placeholder="e.g. Andheri West" required />
+    </label>
+
+    <label>
+      Distance (km):
+      <input type="number" id="distance" placeholder="5" required />
+    </label>
+
+    <button type="submit">Find Clean Route</button>
+  </form>
+
+  <div id="result">
+    <h2>Recommended Route</h2>
+    <p id="routeText">No route generated yet.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
